@@ -6,15 +6,15 @@
 //  Copyright © 2019 123. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MUIJKPlayerViewController.h"
 #import <IJKMediaFramework/IJKMediaFramework.h>
-@interface ViewController ()
+@interface MUIJKPlayerViewController ()
 
 @property (nonatomic,strong) IJKFFMoviePlayerController *player;
 
 @end
 
-@implementation ViewController
+@implementation MUIJKPlayerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

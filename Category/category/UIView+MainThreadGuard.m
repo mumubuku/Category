@@ -64,8 +64,12 @@ static inline void swizzling_exchangeMethod(Class clazz ,SEL originalSelector, S
 
 - (void)UIMainThreadCheck
 {
+    //看来这个分类不一定准啊。
     NSString *desc = [NSString stringWithFormat:@"%@", self.class];
     NSAssert([NSThread isMainThread], desc);
+    if(![NSThread isMainThread]){
+        NSLog(@"不在主线程");
+    }
 }
 
 @end
