@@ -11,7 +11,7 @@
 		DF0F51672334F1D900A93581 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0F51652334F1D900A93581 /* libc++abi.tbd */; };
 		DF0F51682334F1D900A93581 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0F51662334F1D900A93581 /* libc++.tbd */; };
 		DF0F51732334FEF500A93581 /* video.ts in Resources */ = {isa = PBXBuildFile; fileRef = DF0F51722334FEF500A93581 /* video.ts */; };
-		DF1FAF56233B644A00E7962F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1FAF55233B644A00E7962F /* main.m */; };
+		DF1FAF56233B644A00E7962F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DF1FAF55233B644A00E7962F /* main.c */; };
 		DF1FAFCC233B646700E7962F /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FAFC5233B646700E7962F /* libavutil.a */; };
 		DF1FAFCD233B646700E7962F /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FAFC6233B646700E7962F /* libavfilter.a */; };
 		DF1FAFCE233B646700E7962F /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FAFC7233B646700E7962F /* libavcodec.a */; };
@@ -45,6 +45,7 @@
 		DF733C832338E52800CABB12 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF733C7C2338E52700CABB12 /* libavdevice.a */; };
 		DF733C842338E52800CABB12 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF733C7D2338E52700CABB12 /* libswresample.a */; };
 		DF733C852338E52800CABB12 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF733C7E2338E52700CABB12 /* libswscale.a */; };
+		DF90C1A8233C5B5F00BB099D /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF90C1A1233C5B5F00BB099D /* SDL2.framework */; };
 		DFCEB6352334E5E80040AD44 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCEB62D2334E5840040AD44 /* IJKMediaFramework.framework */; };
 		DFCEB6372334E5F10040AD44 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCEB6362334E5F10040AD44 /* AudioToolbox.framework */; };
 		DFCEB6392334E5F80040AD44 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCEB6382334E5F80040AD44 /* AVFoundation.framework */; };
@@ -102,14 +103,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		DF1FB016233B6F8200E7962F /* CopyFiles */ = {
+		DF90C19E233B9CC900BB099D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -119,7 +121,7 @@
 		DF0F51662334F1D900A93581 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		DF0F51722334FEF500A93581 /* video.ts */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.ts; sourceTree = "<group>"; };
 		DF1FAF53233B644A00E7962F /* ffmpeg+sdl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ffmpeg+sdl"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF1FAF55233B644A00E7962F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF1FAF55233B644A00E7962F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		DF1FAF5F233B646700E7962F /* avcodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avcodec.h; sourceTree = "<group>"; };
 		DF1FAF60233B646700E7962F /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		DF1FAF61233B646700E7962F /* buffersrc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffersrc.h; sourceTree = "<group>"; };
@@ -231,7 +233,6 @@
 		DF1FAFDF233B665E00E7962F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		DF1FAFE1233B67BA00E7962F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
 		DF1FAFE3233B67C400E7962F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		DF1FB018233B6F8200E7962F /* sdl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sdl; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF201B402338AE6B00F0792F /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DF201B412338AE6B00F0792F /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DF201B442338B23800F0792F /* MUTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUTestViewController.h; sourceTree = "<group>"; };
@@ -351,6 +352,7 @@
 		DF733C7C2338E52700CABB12 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavdevice.a; sourceTree = "<group>"; };
 		DF733C7D2338E52700CABB12 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		DF733C7E2338E52700CABB12 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		DF90C1A1233C5B5F00BB099D /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
 		DFCEB6262334E5840040AD44 /* IJKMediaPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IJKMediaPlayer.xcodeproj; path = "../../ijkplayer-ios/ios/IJKMediaPlayer/IJKMediaPlayer.xcodeproj"; sourceTree = "<group>"; };
 		DFCEB6362334E5F10040AD44 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DFCEB6382334E5F80040AD44 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -376,6 +378,7 @@
 				DF1FAFDE233B665100E7962F /* libbz2.tbd in Frameworks */,
 				DF1FAFD2233B646700E7962F /* libswscale.a in Frameworks */,
 				DF1FAFCD233B646700E7962F /* libavfilter.a in Frameworks */,
+				DF90C1A8233C5B5F00BB099D /* SDL2.framework in Frameworks */,
 				DF1FAFE4233B67C400E7962F /* CoreFoundation.framework in Frameworks */,
 				DF1FAFDA233B661C00E7962F /* VideoToolbox.framework in Frameworks */,
 				DF1FAFD6233B660B00E7962F /* CoreMedia.framework in Frameworks */,
@@ -388,13 +391,6 @@
 				DF1FAFD8233B661400E7962F /* CoreGraphics.framework in Frameworks */,
 				DF1FAFCF233B646700E7962F /* libavformat.a in Frameworks */,
 				DF1FAFE2233B67BA00E7962F /* CoreVideo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF1FB015233B6F8200E7962F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				DF1FAF5C233B646700E7962F /* FFmpeg-iOS */,
-				DF1FAF55233B644A00E7962F /* main.m */,
+				DF1FAF55233B644A00E7962F /* main.c */,
 			);
 			path = "ffmpeg+sdl";
 			sourceTree = "<group>";
@@ -613,6 +609,7 @@
 		DF1FAFC4233B646700E7962F /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				DF90C1A1233C5B5F00BB099D /* SDL2.framework */,
 				DF1FAFC5233B646700E7962F /* libavutil.a */,
 				DF1FAFC6233B646700E7962F /* libavfilter.a */,
 				DF1FAFC7233B646700E7962F /* libavcodec.a */,
@@ -657,7 +654,6 @@
 			children = (
 				DF4091992334AEDF0028E555 /* Category.app */,
 				DF1FAF53233B644A00E7962F /* ffmpeg+sdl */,
-				DF1FB018233B6F8200E7962F /* sdl */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -929,23 +925,6 @@
 			productReference = DF1FAF53233B644A00E7962F /* ffmpeg+sdl */;
 			productType = "com.apple.product-type.tool";
 		};
-		DF1FB017233B6F8200E7962F /* sdl */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DF1FB01C233B6F8200E7962F /* Build configuration list for PBXNativeTarget "sdl" */;
-			buildPhases = (
-				DF1FB014233B6F8200E7962F /* Sources */,
-				DF1FB015233B6F8200E7962F /* Frameworks */,
-				DF1FB016233B6F8200E7962F /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = sdl;
-			productName = sdl;
-			productReference = DF1FB018233B6F8200E7962F /* sdl */;
-			productType = "com.apple.product-type.tool";
-		};
 		DF4091982334AEDF0028E555 /* Category */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF4091AF2334AEE00028E555 /* Build configuration list for PBXNativeTarget "Category" */;
@@ -953,6 +932,7 @@
 				DF4091952334AEDF0028E555 /* Sources */,
 				DF4091962334AEDF0028E555 /* Frameworks */,
 				DF4091972334AEDF0028E555 /* Resources */,
+				DF90C19E233B9CC900BB099D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -974,9 +954,6 @@
 				ORGANIZATIONNAME = 123;
 				TargetAttributes = {
 					DF1FAF52233B644A00E7962F = {
-						CreatedOnToolsVersion = 11.0;
-					};
-					DF1FB017233B6F8200E7962F = {
 						CreatedOnToolsVersion = 11.0;
 					};
 					DF4091982334AEDF0028E555 = {
@@ -1005,7 +982,6 @@
 			targets = (
 				DF4091982334AEDF0028E555 /* Category */,
 				DF1FAF52233B644A00E7962F /* ffmpeg+sdl */,
-				DF1FB017233B6F8200E7962F /* sdl */,
 			);
 		};
 /* End PBXProject section */
@@ -1053,14 +1029,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF1FAF56233B644A00E7962F /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF1FB014233B6F8200E7962F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DF1FAF56233B644A00E7962F /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,6 +1081,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Category/FFmpeg-iOS/lib",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/ffmpeg+sdl/FFmpeg-iOS/include";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1128,31 +1101,15 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Category/FFmpeg-iOS/lib",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/ffmpeg+sdl/FFmpeg-iOS/include";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Category/FFmpeg-iOS/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		DF1FB01D233B6F8200E7962F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		DF1FB01E233B6F8200E7962F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1281,7 +1238,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A62PAJV4X;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Category/FFmpeg-iOS/include";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Category/FFmpeg-iOS/include",
+					"${SRCROOT}/Frameworks/SDL",
+				);
 				INFOPLIST_FILE = Category/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1304,7 +1264,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A62PAJV4X;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Category/FFmpeg-iOS/include";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Category/FFmpeg-iOS/include",
+					"${SRCROOT}/Frameworks/SDL",
+				);
 				INFOPLIST_FILE = Category/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1329,15 +1292,6 @@
 			buildConfigurations = (
 				DF1FAF57233B644A00E7962F /* Debug */,
 				DF1FAF58233B644A00E7962F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DF1FB01C233B6F8200E7962F /* Build configuration list for PBXNativeTarget "sdl" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF1FB01D233B6F8200E7962F /* Debug */,
-				DF1FB01E233B6F8200E7962F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

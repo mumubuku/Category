@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface MUIJKPlayerViewController : UIViewController
 
